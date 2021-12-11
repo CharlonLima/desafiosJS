@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script type="module" src="chamada/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>ME ACHA - JS</title>
+</head>
+<body>
+    <header class="tipoEtamanhoFonte centralizar">
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2> 
+    </header>
+    <main class="centralizar">
+        <div id="icone" class="centralizar">
+            <span class="material-icons">
+                travel_explore
+                </span>
+        </div>
+        <section class="tipoEtamanhoFonte centralizar">
+        <form action="">
+            <fieldset>
+                <label class="flex handMouse" for="cep">Cep:</label>
+                <input class="estiloformulario handMouse" required id="cep" placeholder="Digite o cep para retornar o endereço" type="text">
+                <label class="flex" for="">Rua:</label>
+                <input class="estiloformulario" disabled id="logradouro" type="text">
+                <label class="flex" for="">Bairro:</label>
+                <input class="estiloformulario" disabled id="bairro" type="text">
+                <label class="flex" for="">Cidade:</label>
+                <input class="estiloformulario" disabled id="localidade" type="text">
+                <label class="flex" for="">Estado:</label>
+                <input class="estiloformulario" disabled id="uf" type="text">
+                <input id="botao" class="centralizar handMouse" type="button" value="BUSCAR">
+            </fieldset>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
